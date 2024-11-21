@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3 Visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+
+    <style>
+      .node {
+        stroke: black;
+        stroke-width: 1.5px;
+      }
+      .link {
+        stroke: #000;
+        stroke-opacity: 0.6;
+      }
+      .highlight {
+        fill: orange;
+      }
+      .greyed-out {
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Preview</h1>
+    <div id="map"></div>
+    <!-- <svg width="800" height="600">
+      <defs></defs>
+    </svg> -->
+
+    <!-- Loading your D3 script as a module -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
